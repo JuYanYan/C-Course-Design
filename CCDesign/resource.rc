@@ -1,0 +1,357 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "CompanyName", "JuYan"
+            VALUE "FileDescription", "建筑工地考勤管理系统"
+            VALUE "FileVersion", "1.0.0.0"
+            VALUE "InternalName", "CCDesign.exe"
+            VALUE "OriginalFilename", "CCDesign.exe"
+            VALUE "ProductName", "建筑工地考勤管理系统"
+            VALUE "ProductVersion", "1.0.0.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_EDIT DIALOGEX 0, 0, 253, 60
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "添加数据"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "姓名",IDC_STATIC,7,7,19,8
+    EDITTEXT        IDC_EDIT_WORKER_NAME,7,17,51,12,ES_AUTOHSCROLL
+    LTEXT           "工号",IDC_STATIC,69,7,19,8
+    EDITTEXT        IDC_EDIT_WORKER_ID,69,17,51,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "电话",IDC_STATIC,131,7,19,8
+    EDITTEXT        IDC_EDIT_WORKER_PHONENUM,131,17,51,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "岗位",IDC_STATIC,194,7,19,8
+    EDITTEXT        IDC_EDIT_WORKER_STAT,194,17,51,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确认插入",IDOK,132,37,51,16
+    PUSHBUTTON      "取消",IDCANCEL,195,37,51,16
+END
+
+IDD_DIALOG_LOGIN_OUT DIALOGEX 0, 0, 225, 116
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "打卡"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,68,73,89,20
+    EDITTEXT        IDC_EDIT_LOGIN_ID,68,51,89,14,ES_CENTER | ES_AUTOHSCROLL
+    CTEXT           "键入工号",IDC_STATIC,68,28,89,8
+END
+
+IDD_DIALOG_UPDATE DIALOGEX 0, 0, 253, 60
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "更改数据"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "姓名",IDC_STATIC,70,7,19,8
+    EDITTEXT        IDC_EDIT_WORKER_NAME,69,17,51,12,ES_AUTOHSCROLL
+    LTEXT           "工号",IDC_STATIC,7,7,19,8
+    EDITTEXT        IDC_EDIT_WORKER_ID,7,17,51,12,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER
+    LTEXT           "电话",IDC_STATIC,131,7,19,8
+    EDITTEXT        IDC_EDIT_WORKER_PHONENUM,131,17,51,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "岗位",IDC_STATIC,194,7,19,8
+    EDITTEXT        IDC_EDIT_WORKER_STAT,193,17,51,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确认更改",IDOK,132,37,51,16
+    PUSHBUTTON      "取消",IDCANCEL,195,37,51,16
+END
+
+IDD_DIALOG_ABOUT DIALOGEX 0, 0, 153, 65
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,96,44,50,14
+    ICON            IDI_APP_ICON,IDC_STATIC,9,12,21,20
+    LTEXT           "课程设计",IDC_STATIC,49,15,97,8
+    LTEXT           "Copyright (C) JuYan",IDC_STATIC,50,27,76,8
+END
+
+IDD_DIALOG_INFO DIALOGEX 0, 0, 320, 176
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "详细信息"
+FONT 9, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,234,112,79,16
+    LTEXT           "名字: [Name]",IDC_STATIC_NAME,235,7,77,8
+    LTEXT           "职位: [NONE]",IDC_STATIC_STATE,235,22,76,8
+    LTEXT           "显示: ",IDC_STATIC,235,48,18,8
+    COMBOBOX        IDC_COMBO_SHOWTIME,254,47,58,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "工时: [NONE](总)",IDC_STATIC_WORKHOUR,235,35,76,8
+    CONTROL         "",IDC_INFO_LIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_TABSTOP,0,0,229,174
+END
+
+IDD_DIALOG_SEARCH DIALOGEX 0, 0, 251, 87
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "筛选"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "筛选",IDOK,138,66,50,14
+    LTEXT           "留空表示忽略, 用%表示任意, 用_占位, 在上面输入条件, 单击 筛选",IDC_STATIC,7,46,237,8
+    EDITTEXT        IDC_EDIT_SEARCH_ID,7,24,72,14,ES_AUTOHSCROLL
+    LTEXT           "工号",IDC_STATIC,7,13,17,8
+    LTEXT           "姓名",IDC_STATIC,89,12,17,8
+    EDITTEXT        IDC_EDIT_SEARCH_NAME,89,24,71,14,ES_AUTOHSCROLL
+    LTEXT           "岗位",IDC_STATIC,173,13,17,8
+    EDITTEXT        IDC_EDIT_SEARCH_STAT,172,24,71,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "清除条件",IDC_BUTTON_CLEAR,7,66,50,14
+    PUSHBUTTON      "完成",IDCANCEL,194,66,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DIALOG_EDIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 246
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 53
+    END
+
+    IDD_DIALOG_LOGIN_OUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 218
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 109
+    END
+
+    IDD_DIALOG_UPDATE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 246
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 53
+    END
+
+    IDD_DIALOG_ABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 146
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 58
+    END
+
+    IDD_DIALOG_INFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
+
+    IDD_DIALOG_SEARCH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 244
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 80
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_DIALOG_EDIT AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_LOGIN_OUT AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_UPDATE AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_ABOUT AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_INFO AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_SEARCH AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU MENU
+BEGIN
+    POPUP "首选项"
+    BEGIN
+        MENUITEM "打卡",                          IDM_LOGIN_OUT
+        MENUITEM "导出",                          IDM_EXPORT
+        MENUITEM "切换模式",                        IDM_CHANGEMODE
+        MENUITEM SEPARATOR
+        MENUITEM "退出",                          IDM_EXIT
+    END
+    POPUP "编辑"
+    BEGIN
+        MENUITEM "新增",                          IDM_ADD
+        MENUITEM "修改",                          IDM_CHANGE
+        MENUITEM "移除",                          IDM_REMOVE
+        MENUITEM "清空",                          IDM_SETEMPTY
+        MENUITEM SEPARATOR
+        MENUITEM "查找",                          IDM_SEARCH
+        MENUITEM "清除筛选",                        IDM_CLEARCOND
+    END
+    POPUP "帮助"
+    BEGIN
+        MENUITEM "关于",                          IDM_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_ADD          BITMAP                  "res\\add.bmp"
+
+IDB_BITMAP_REMOVE       BITMAP                  "res\\remove.bmp"
+
+IDB_BITMAP_LOGIN        BITMAP                  "res\\login.bmp"
+
+IDB_BITMAP_UPDATE       BITMAP                  "res\\update.bmp"
+
+IDB_BITMAP_EXPORT       BITMAP                  "res\\export.bmp"
+
+IDB_BITMAP_COND         BITMAP                  "res\\cond.bmp"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_APP_ICON            ICON                    "res\\app.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDC_CCDESIGN            "JZGDGL_CLASS"
+END
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
